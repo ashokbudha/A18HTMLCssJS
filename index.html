@@ -69,6 +69,19 @@ color: #fff;
 padding:24px;
 }
 
+.grid-form{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
+    gap:24px
+
+}
+.grid-form input{
+    width:95%;
+    padding: 10px;
+    margin-top: 4px;
+    border:1px solid black;
+    border-radius: 8px;
+}
         </style>
     </head>
     <body>
@@ -116,6 +129,22 @@ padding:24px;
     <strong> we learn about   &lt;div&gt; &lt;footer&gt; &lt;header&gt;</strong>
   </div>
   </div>
+   </section>
+   <section id="form">
+    <h2>Form Basics</h2>
+    <form method="post" action="#">
+<div class="grid-form">
+    <div>
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    
+</div>
+    </form>
    </section>
 </div>
 <footer>
